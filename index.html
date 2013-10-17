@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	   <title>IFSC - Acesso ao Sistema</title>
+	<link rel="stylesheet" href="css/barra.css">
+</head>
+<body>
+	<div id="barra-brasil" class="todo">
+		<div class="linha-inicio"></div><!-- Borda amarela para parte externa do grid -->
+		<div class="centro">
+			<div class="linha-centro"></div> <!-- Borda amarela para parte interna do grid -->
+			<div class="links">
+				<a href="http://www.brasil.gov.br" class="brasil" target="_blank" title="Portal de Estado do Brasil">Brasil</a>
+				<a href="http://www.acessoainformacao.gov.br" class="acesso" target="_blank" title="Acesso à informação">Acesso à informação</a>
+			</div><!-- .link -->
+		</div><!-- .centro -->
+	</div><!-- #barra-brasil -->
+	
+    <header>
+        <h1><abbr>IFSC</abbr> - Instituto Federal de Santa Catarina</h1>
+        <h2>Nome<span>do</span>Sistema</h2>
+    </header>
+    
+    <section>
+    
+        <h3>Logotipo do IFSC</h3>
+        <p>Bem vindo ao sistema de avc</p>
+    
+        <form name="form" action="https://avaliacao.ifsc.edu.br/sadadmin/login.jsp" method="post">
+            <span class="add-on"><i class="icon-envelope"></i></span>
+            <p>Usuário:</p>
+            <input type="text" name="username" id="name" placeholder="Informe seu usuário" autocomplete="off">
+            <p>Senha:</p>
+            <input type="password" name="password" id="email" placeholder="Informe sua senha" autocomplete="off">
+            <h5>Ao clicar no botão entrar, você afirma que leu e <a href="#regras">aceita as regras</a> para uso da rede do IFSC.</h5>
+            <input type="submit" name="submit" id="" class="btn btn-large btn-success" value="Entrar" onclick="return submit_login();">
+        </form>
+        
+    </section>
+    
+    <div class="disclaimer">
+	    <a id="regras"></a><h2>Regras para uso deste Sistema</h2>
+		<ol>
+		    <li>O IFSC não presta suporte para configuração de equipamentos pessoais para fazer uso deste serviço;</li>
+		    <li>O IFSC não se responsabiliza por qualquer dano causado (<span lang="en">software</span> e <span lang="en">hardware</span>) nos equipamentos que fazem uso deste serviço;</li>
+		    <li>As credenciais de acesso (usuário e senha) são de uso individual e não devem ser compartilhadas com terceiros, sob pena de suspensão ou cancelamento;</li>
+		    <li>O usuário não fará uso deste serviço para violar leis brasileiras, internacionais, de propriedade intelectual e as resoluções do IFSC;</li>
+		    <li>O usuário será responsabilizado por qualquer dano causado à rede do IFSC ou se violar leis brasileiras, internacionais, de propriedade intelectual e as resoluções do IFSC;</li>
+		    <li>Não é permitido fazer uso de programas e recursos que causem ou tentem causar a indisponibilidade de serviços de rede ou que prejudiquem de alguma forma as atividades de outros usuários;</li>
+		    <li>O IFSC se reserva o direito de monitorar o uso deste serviço e fornecer informações sobre seus usuários para as autoridades brasileiras.</li>
+		</ol>
+	</div>
+    
+    <footer>
+        <p>&copy; <abbr>DTIC</abbr> - Diretoria de Tecnologia da Informação e Comunicação do IFSC</p>
+    </footer>
+</body>
+</html>
